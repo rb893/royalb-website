@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Royal B.</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #f5f5dc; /* beige */
+      color: #3b2f2f; /* chocolate */
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      text-align: center;
+      padding: 100px 20px 60px;
+    }
+
+    header h1 {
+      font-size: 60px;
+      font-weight: bold;
+      color: #3b2f2f;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 18px;
+      margin-top: 10px;
+      font-style: italic;
+    }
+
+    nav {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #3b2f2f;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #3b2f2f;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #3b2f2f;
+      color: beige;
+      padding: 10px;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .scroll-down,
+    .scroll-up {
+      display: block;
+      margin: 30px auto;
+      font-size: 18px;
+      text-decoration: none;
+      color: #3b2f2f;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #e6e6d1;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <header id="home">
+    <h1>Royal B.</h1>
+    <p>Design with elegance</p>
+    <a href="#info" class="scroll-down">▼ Scroll Down</a>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#info">Information</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#signup">Signup</a>
+  </nav>
+
+  <section id="info">
+    <h2>Information</h2>
+    <p>Welcome to Royal B. A place of style, elegance, and minimalism. Every design is made to inspire confidence and beauty. Discover more by exploring the gallery or signing up below.</p>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <p>Our latest fashion collections will appear here soon. Stay tuned!</p>
+  </section>
+
+  <section id="signup">
+    <h2>Request Access</h2>
+    <form action="https://formspree.io/f/mldjkdpy" method="POST">
+      <label for="firstname">First Name:</label>
+      <input type="text" id="firstname" name="firstname" required>
+
+      <label for="middlename">Middle Name:</label>
+      <input type="text" id="middlename" name="middlename">
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" min="1" max="120" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <a href="#home" class="scroll-up">▲ Back to Top</a>
+
+  <footer>
+    <p>© 2025 Royal B. | Follow us on 
+      <a href="#" target="_blank">Instagram</a>, 
+      <a href="#" target="_blank">Pinterest</a>
+    </p>
+  </footer>
+
+</body>
+</html>
