@@ -1,156 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Royal B.</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Royal B</title>
   <style>
     body {
-      font-family: 'Georgia', serif;
-      background-color: #f5f5dc; /* beige */
-      color: #3b2f2f; /* chocolate */
       margin: 0;
-      padding: 0;
-      scroll-behavior: smooth;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f5dc; /* beige */
+      color: #4b3621; /* chocolate color */
     }
-
     header {
       text-align: center;
-      padding: 100px 20px 60px;
+      padding: 50px 20px;
     }
-
     header h1 {
       font-size: 60px;
       font-weight: bold;
-      color: #3b2f2f;
-      margin: 0;
+      margin-bottom: 10px;
     }
-
     header p {
       font-size: 18px;
-      margin-top: 10px;
-      font-style: italic;
+      color: #6e5844;
     }
-
     nav {
       text-align: center;
-      margin-bottom: 30px;
+      margin: 20px 0;
     }
-
     nav a {
       margin: 0 15px;
       text-decoration: none;
-      color: #3b2f2f;
+      color: #4b3621;
       font-weight: bold;
     }
-
     section {
       padding: 80px 20px;
       text-align: center;
     }
-
-    h2 {
-      font-size: 32px;
-      margin-bottom: 20px;
+    #home {
+      font-size: 24px;
     }
-
+    #information, #gallery, #contact {
+      background-color: #fdf6e3;
+      margin: 30px 0;
+      border-radius: 20px;
+      padding: 50px 20px;
+    }
     form {
-      max-width: 400px;
-      margin: 0 auto;
       display: flex;
       flex-direction: column;
-      gap: 15px;
+      align-items: center;
     }
-
-    input {
-      padding: 10px;
+    form input, form button {
+      width: 80%;
+      max-width: 400px;
+      margin: 10px 0;
+      padding: 12px;
+      border: 1px solid #4b3621;
+      border-radius: 10px;
       font-size: 16px;
-      border: 1px solid #3b2f2f;
-      border-radius: 5px;
     }
-
-    button {
-      background-color: #3b2f2f;
-      color: beige;
-      padding: 10px;
-      border: none;
-      font-size: 16px;
+    form button {
+      background-color: #4b3621;
+      color: white;
       cursor: pointer;
-      border-radius: 5px;
     }
-
-    .scroll-down,
-    .scroll-up {
-      display: block;
-      margin: 30px auto;
+    .scroll-button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 20px;
+      background-color: #4b3621;
+      color: white;
+      border: none;
+      border-radius: 20px;
       font-size: 18px;
       text-decoration: none;
-      color: #3b2f2f;
-    }
-
-    footer {
-      text-align: center;
-      padding: 40px 20px;
-      background-color: #e6e6d1;
-      margin-top: 60px;
+      cursor: pointer;
     }
   </style>
 </head>
+
 <body>
 
   <header id="home">
     <h1>Royal B.</h1>
-    <p>Design with elegance</p>
-    <a href="#info" class="scroll-down">▼ Scroll Down</a>
+    <p>Luxury Fashion Designs</p>
+    <a href="#information" class="scroll-button">Scroll Down</a>
   </header>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#info">Information</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#signup">Signup</a>
-  </nav>
-
-  <section id="info">
+  <section id="information">
     <h2>Information</h2>
-    <p>Welcome to Royal B. A place of style, elegance, and minimalism. Every design is made to inspire confidence and beauty. Discover more by exploring the gallery or signing up below.</p>
+    <p>Discover the latest fashion collections and timeless designs crafted with elegance and luxury.</p>
   </section>
 
   <section id="gallery">
     <h2>Gallery</h2>
-    <p>Our latest fashion collections will appear here soon. Stay tuned!</p>
+    <p>Explore and shop our unique designs curated for those with a taste for elegance.</p>
   </section>
 
-  <section id="signup">
-    <h2>Request Access</h2>
-    <form action="https://formspree.io/f/mldjkdpy" method="POST">
-      <label for="firstname">First Name:</label>
-      <input type="text" id="firstname" name="firstname" required>
-
-      <label for="middlename">Middle Name:</label>
-      <input type="text" id="middlename" name="middlename">
-
-      <label for="age">Age:</label>
-      <input type="number" id="age" name="age" min="1" max="120" required>
-
-      <label for="email">Email Address:</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password" required>
-
-      <button type="submit">Submit</button>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/mblolgjl" method="POST">
+      <input type="text" name="name" placeholder="Name" required>
+      <input type="text" name="middlename" placeholder="Middle Name">
+      <input type="number" name="age" placeholder="Age">
+      <input type="email" name="email" placeholder="Email Address" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <button type="submit">Send</button>
     </form>
   </section>
 
-  <a href="#home" class="scroll-up">▲ Back to Top</a>
-
-  <footer>
-    <p>© 2025 Royal B. | Follow us on 
-      <a href="#" target="_blank">Instagram</a>, 
-      <a href="#" target="_blank">Pinterest</a>
-    </p>
-  </footer>
+  <div style="text-align: center; margin-bottom: 50px;">
+    <a href="#home" class="scroll-button">Scroll Up</a>
+  </div>
 
 </body>
 </html>
+
